@@ -1,0 +1,35 @@
+body {
+  background-color: black;
+}
+
+h1, h2 {
+  color: red;
+}
+
+p, ul {
+  color: green;
+}
+
+.intro, h2 {
+  text-align: center;
+}
+
+h1 {
+  padding-top: 50px;
+}
+
+div {
+  display: block;
+}
+
+#likes {
+  float: left;
+  padding: 50px;
+  margin: auto;
+}
+
+#noLikes {
+  float: right;
+  padding: 50px;
+  margin: auto;
+}
