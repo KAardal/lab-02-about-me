@@ -1,9 +1,9 @@
 'use strict';
 
-var userResponse = '';
+var userResponse;
 
 function checkResponseYes(response) {
-  if(response.trim().toLowerCase() == 'yes' || response.trim().toLowerCase() == 'y') {
+  if(response && (response.trim().toLowerCase() == 'yes' || response.trim().toLowerCase() == 'y')) {
     alert('Correct!');
     console.log('User response: ' + response + '. Correct!');
   } else {
@@ -13,7 +13,7 @@ function checkResponseYes(response) {
 }
 
 function checkResponseNo(response) {
-  if(response.trim().toLowerCase() == 'no' || response.trim().toLowerCase() == 'n') {
+  if(response && (response.trim().toLowerCase() == 'no' || response.trim().toLowerCase() == 'n')) {
     alert('Correct!');
     console.log('User response: ' + response + '. Correct!');
   } else {
