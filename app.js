@@ -3,7 +3,7 @@
 var userResponse = '';
 
 function checkResponseYes(response) {
-  if(response.trim().toLowerCase() == 'yes' || response.trim().toLowerCase() == 'y') {
+  if(response && (response.trim().toLowerCase() == 'yes' || response.trim().toLowerCase() == 'y')) {
     alert('Correct!');
     console.log('User response: ' + response + '. Correct!');
   } else {
@@ -13,7 +13,7 @@ function checkResponseYes(response) {
 }
 
 function checkResponseNo(response) {
-  if(response.trim().toLowerCase() == 'no' || response.trim().toLowerCase() == 'n') {
+  if(response && (response.trim().toLowerCase() == 'no' || response.trim().toLowerCase() == 'n')) {
     alert('Correct!');
     console.log('User response: ' + response + '. Correct!');
   } else {
@@ -41,3 +41,24 @@ checkResponseNo(userResponse);
 userResponse = prompt('Does Kyle like sleep?');
 console.log('Does Kyle like sleep?');
 checkResponseYes(userResponse);
+
+var favoriteNum = '11';
+var userGuess
+var numNotGuessed = true;
+
+for(var i = 0; i < 4 && numNotGuessed; i++){
+  userGuess = prompt('Guess Kyle\'s favorite number.');
+  console.log('Guess Kyle\'s favorite number.');
+
+  if(userGuess > favoriteNum){
+      alert('Too high!');
+      console.console.log('Too High!');
+  } else if (userGuess < favoriteNum) {
+    alert('Too low!');
+    console.console.log('Too low!');
+  } else {
+    alert('You got it!');
+    console.console.log('You got it!');
+    numNotGuessed = false;
+  }
+}
