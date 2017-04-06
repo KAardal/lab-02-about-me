@@ -55,17 +55,15 @@ checkResponseNo(userResponse);
 numQuestions++;
 }
 function questionFive(){
-
 userResponse = prompt('Does Kyle like sleep?');
 console.log('Does Kyle like sleep?');
 checkResponseYes(userResponse);
 numQuestions++;
 }
-
+function questionSix(){
 for(var i = 0; i < 4 && notGuessed; i++){
   userGuess = prompt('Guess Kyle\'s favorite number.');
   console.log('Guess Kyle\'s favorite number.');
-
   if(userGuess > favoriteNum){
       alert('Too high!');
       console.log('Too High!');
@@ -78,6 +76,7 @@ for(var i = 0; i < 4 && notGuessed; i++){
     notGuessed = false;
     numCorrect++;
   }
+}
 }
 numQuestions++;
 
