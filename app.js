@@ -29,31 +29,38 @@ function checkResponseNo(response) {
     console.log('User response: ' + response + '. Wrong!');
   }
 }
+function questionOne(){
 
-userResponse = prompt('Does Kyle like rain drops on roses?');
-console.log('Does Kyle like rain drops on roses?');
-checkResponseYes(userResponse);
-numQuestions++;
-
+  userResponse = prompt('Does Kyle like rain drops on roses?');
+  console.log('Does Kyle like rain drops on roses?');
+  checkResponseYes(userResponse);
+  numQuestions++;
+}
+function questionTwo(){
 userResponse = prompt('Does Kyle like whiskers on kittens?');
 console.log('Does Kyle like whiskers on kittens?');
 checkResponseYes(userResponse);
 numQuestions++;
-
+}
+function questionThree(){
 userResponse = prompt('Does Kyle like beer?');
 console.log('Does Kyle like beer?');
 checkResponseYes(userResponse);
 numQuestions++;
-
+}
+function questionFour(){
 userResponse = prompt('Does Kyle like sweet potatoes?');
 console.log('Does Kyle like sweet potatoes?');
 checkResponseNo(userResponse);
 numQuestions++;
+}
+function questionFive(){
 
 userResponse = prompt('Does Kyle like sleep?');
 console.log('Does Kyle like sleep?');
 checkResponseYes(userResponse);
 numQuestions++;
+}
 
 for(var i = 0; i < 4 && notGuessed; i++){
   userGuess = prompt('Guess Kyle\'s favorite number.');
