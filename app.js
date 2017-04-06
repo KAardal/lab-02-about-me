@@ -77,8 +77,9 @@ for(var i = 0; i < 4 && notGuessed; i++){
     numCorrect++;
   }
 }
-}
 numQuestions++;
+}
+function questionSeven(){
 
 notGuessed = true;
 for(var i = 0; i < 6 && notGuessed; i++){
@@ -102,5 +103,6 @@ for(var i = 0; i < 6 && notGuessed; i++){
   }
 }
 numQuestions++;
+}
 
 alert('You got ' + numCorrect + ' out of' + numQuestions + 'correct');
