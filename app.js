@@ -29,41 +29,42 @@ function checkResponseNo(response) {
     console.log('User response: ' + response + '. Wrong!');
   }
 }
+
 function questionOne(){
   userResponse = prompt('Does Kyle like rain drops on roses?');
   console.log('Does Kyle like rain drops on roses?');
   checkResponseYes(userResponse);
   numQuestions++;
 }
-questionOne();
+
 function questionTwo(){
   userResponse = prompt('Does Kyle like whiskers on kittens?');
   console.log('Does Kyle like whiskers on kittens?');
   checkResponseYes(userResponse);
   numQuestions++;
 }
-questionTwo();
+
 function questionThree(){
   userResponse = prompt('Does Kyle like beer?');
   console.log('Does Kyle like beer?');
   checkResponseYes(userResponse);
   numQuestions++;
 }
-questionThree();
+
 function questionFour(){
   userResponse = prompt('Does Kyle like sweet potatoes?');
   console.log('Does Kyle like sweet potatoes?');
   checkResponseNo(userResponse);
   numQuestions++;
 }
-questionFour();
+
 function questionFive(){
   userResponse = prompt('Does Kyle like sleep?');
   console.log('Does Kyle like sleep?');
   checkResponseYes(userResponse);
   numQuestions++;
 }
-questionFive();
+
 function questionSix(){
   for(var i = 0; i < 4 && notGuessed; i++){
     userGuess = prompt('Guess Kyle\'s favorite number.');
@@ -86,7 +87,7 @@ function questionSix(){
   }
   numQuestions++;
 }
-questionSix();
+
 function questionSeven(){
   notGuessed = true;
   for(var i = 0; i < 6 && notGuessed; i++){
@@ -109,5 +110,13 @@ function questionSeven(){
   }
   numQuestions++;
 }
+
+questionOne();
+questionTwo();
+questionThree();
+questionFour()
+questionFive();
+questionSix();
 questionSeven();
+
 alert('You got ' + numCorrect + ' out of' + numQuestions + 'correct');
